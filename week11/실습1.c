@@ -7,8 +7,8 @@ int main(void) {
 	fgets(str, sizeof(str), stdin);
 	p = str;
 	while (*p != '\0' && *p != '\n') {
-		if (*p >= 'a' && *p <= 'z') {
-			*p = *p - 'a' + 'A';
+		if (*p >= 'A' && *p <= 'Z') {
+			*p = *p - 'A' + 'a';
 		}
 		p++;
 	}
